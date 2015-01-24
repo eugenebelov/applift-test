@@ -15,87 +15,321 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+
+  <div class="main">
     <header id="header" class="header">
       <div class="container">
         <div class="row">
-         
-            <nav class='main-menu'>
-                <div class="row">
-                  <div class="logo col-md-5">
-                    <img src="images/logo.png" alt="" />
-                  </div>
-                  <div class="navbar col-md-6">
-                    <ul>
-                      <li><a href="" title="">Advertise </a></li>
+          <div class="col-md-3">
+            <a class="navbar-brand hidden-xs" href="#"><img src="images/logo.png" alt="" /></a>
+            <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">Applift</a>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-9">
+            <nav class="main-menu navbar navbar-default" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                   data-target="#example-navbar-collapse">
+                   <span class="sr-only"><img src="images/logo.png" alt="" /></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+                
+              </div>
+             <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="" title="">Advertise</a></li>
+                    <li><a href="" title="">Monetize</a></li>
+                    <li><a href="" title="">Insights</a></li>
+                    <li><a href="" title="">About</a></li>
+
+                  <li class="dropdown">
+                    <ul class="dropdown-menu">
+                      <li><a href="" title="">Advertise</a></li>
                       <li><a href="" title="">Monetize</a></li>
                       <li><a href="" title="">Insights</a></li>
-                      <li><a href="" title="">About</a></li>
+                      <li><a href="" title="">About</a></li>   
                     </ul>
-                  </div>
-                  <div class="login col-md-1">
-                    
-                      <img src='images/login-btn.png' />
-                      <span>Login</span>
-                    
-                  </div>
-                </div>
-            </nav>
-          
+                  </li>
+                </ul>
+             </div>
+          </nav>
+          </div>
         </div>
       </div>
-      <div class="language">Lang</div>
+
+      <div class="login">
+        <img src='images/login-btn.png' />
+        <a href="#">Login</a>
+      </div>
+
+      <div class="language">
+        <!-- <span>EN</span> -->
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            EN
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">EN</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UA</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FR</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UK</a></li>
+          </ul>
+        </div>
+      </div>
+
     </header><!-- /header -->
 
     <div class="content-holder">
       <section>
         <div class="slider">
           <div class="slide">
-            <div class="container content">
-              Here is conentn
-            </div>
-            <!-- <img src="images/header-image.png" alt=""> -->
+              <div id="slider1_container" style="display: none; position: relative; margin: 0 auto; width: 1600px; height: 811px; overflow: hidden;">
+                  <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1600px; height: 811px;">
+                    <div>
+                      <img u="image" src="images/header-image.png" />
+                      <div class="slide1-content">
+
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-10">
+                              <div>
+                                <img src="images/slide-icon.png" alt="" />
+                                <h3>Acquire loyal users for your mobile games on a risk-free CPI basis!</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-7">
+                              <p>
+                                AppLift is the one-stop shop for your user acquisition efforts across all media channels. By efficiently allocating your marketing budget across a variety of media channels, we optimize your user acquisition spend and deliver only the best users.
+                              </p>
+                              <button value="Sing up" class="btn btn-default btn-lg round-btn">Sing up</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div> 
+                    </div>
+                    <div>
+                      <img u="image" src="images/header-image.png" />
+                      
+                    </div>
+                    <div>
+                      <img u="image" src="images/header-image.png" />
+                      
+                    </div>
+                </div>
+                <div u="navigator" class='slider-bullets' style="position: absolute; bottom: 26px; left: 923.5px; width: 73px; height: 29px;">
+                    <div u="prototype" style="position: absolute; width: 19px; height: 19px; text-align: center; line-height: 29px; color: white; font-size: 12px; left: 0px; top: 0px;" class="av"></div>
+                    <div u="prototype" style="position: absolute; width: 19px; height: 19px; text-align: center; line-height: 29px; color: white; font-size: 12px; left: 27px; top: 0px;"></div>
+                    <div u="prototype" style="position: absolute; width: 19px; height: 19px; text-align: center; line-height: 29px; color: white; font-size: 12px; left: 54px; top: 0px;" class=""></div>
+                </div>
+              </div>
           </div>
         </div>        
       </section>
 
-      <section>
-        <div class="content-part1"></div>
+      <section class='content-part1'>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>DataLift - User Aquisition as Managed Service</h3>
+              <ul class="custom-list">
+                <li>We optimize towards your LTV goal</li>
+                <li>Maximum transparency</li>
+                <li>Dedicated Account Manager working closely on your specific UA goals</li>
+                <li>Self-service Buying</li>
+              </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class='image-holder'><img src="images/phone-img.png" alt=""></div>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <section class="content-part2">
+        <div class="container">
+          <h3>What our partners say</h3>
+          <div class="row">
+            <ul class="reviews-list">
+              <li class="active">
+                <span class="wrap-img"><img src="images/man.png" alt="" class='img-circle img-thumbnail'></span>
+                <div class="review-preview">
+                  <h3>Felix Janzen</h3>
+                  <h4>Head of Performance Marketing, Innogames</h4>
+                  <p>“AppLift is one of our closest partners, delivering rapid scale in strategic markets. Their strong focus on LTV has enabled us to increase profitability by 30%.”</p>
+                </div>
+              </li>
+              <li>
+                <span class="wrap-img"><img src="images/man.png" alt="" class='img-circle img-thumbnail'></span>
+                <div class="review-preview">
+                  <h3>Shane Horneij</h3>
+                  <h4>Director of Performance Marketing, Mobile, King</h4>
+                  <p>“AppLift is a great partner providing quality users at scale. We look forward to further growing our partnership.”</p>
+                </div>
+              </li>
+              <li>
+                <span class="wrap-img"><img src="images/man.png" alt="" class='img-circle img-thumbnail'></span>
+                <div class="review-preview">
+                  <h3>Felix Janzen3</h3>
+                  <h4>Head of Performance Marketing, Innogames</h4>
+                  <p>“AppLift is one of our closest partners, delivering rapid scale in strategic markets. Their strong focus on LTV has enabled us to increase profitability by 30%.”</p>
+                </div>
+              </li>
+              <li>
+                <span class="wrap-img"><img src="images/man.png" alt="" class='img-circle img-thumbnail'></span>
+                <div class="review-preview">
+                  <h3>Felix Janzen4</h3>
+                  <h4>Head of Performance Marketing, Innogames</h4>
+                  <p>“AppLift is one of our closest partners, delivering rapid scale in strategic markets. Their strong focus on LTV has enabled us to increase profitability by 30%.”</p>
+                </div>
+              </li>
+              <li>
+                <span class="wrap-img"><img src="images/man.png" alt="" class='img-circle img-thumbnail'></span>
+                <div class="review-preview">
+                  <h3>Felix Janzen5</h3>
+                  <h4>Head of Performance Marketing, Innogames</h4>
+                  <p>“AppLift is one of our closest partners, delivering rapid scale in strategic markets. Their strong focus on LTV has enabled us to increase profitability by 30%.”</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="review-preview info">
+              <h3>Felix Janzen</h3>
+              <h4>Head of Performance Marketing, Innogames</h4>
+              <p>“AppLift is one of our closest partners, delivering rapid scale in strategic markets. Their strong focus on LTV has enabled us to increase profitability by 30%.”</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
     </div>
 
     <footer class='footer'>
-      <div class="container botton-menu">
+      <div class="container bottom-menu">
         <div class="row">
           <div class="col-md-3">
             <h5>Advertize</h5>
             <ul>
-              <li>aaaa</li>
+              <li><a href="#">Our strengths</a></li>
+              <li><a href="#">Our offer</a></li>
+              <li><a href="#">Ad examples</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
             </ul>
           </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h5>Monetize</h5>
+            <ul>
+              <li><a href="#">Our products</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Media Partner</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Advertize</h5>
+            <ul>
+              <li><a href="#">Meet the Team</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Our offices</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Insights</a></li>
+              <li><a href="#">Talks</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><a href="#">Join us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Social</h5>
+            <ul class="social-icons">
+              <li><a href="#"><img src="images/link-icon.png" alt=""></a></li>
+              <li><a href="#"><img src="images/gplus-icon.png" alt=""></a></li>
+              <li><a href="#"><img src="images/fb-icon.png" alt=""></a></li>
+              <li><a href="#"><img src="images/tw-icon.png" alt=""></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="copyright">HitFox Group - ad2games      Imprint - Privacy policy - Terms and Conditions - © 2014 AppLift. All Rights Reserved</div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">HitFox Group - ad2games</div>
+            <div class="col-md-8">Imprint - Privacy policy - Terms and Conditions - © 2014 AppLift. All Rights Reserved</div>
+          </div>
+        </div>
+      </div>
     </footer>
+  </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/jssor.slider.mini.js"></script>
+        <script>
+          jQuery(document).ready(function ($) {
+              var options = { 
+                $AutoPlay: false,
+                $ArrowKeyNavigation: true,
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false,                                  //Scales bullets navigator or not while slider scale
+                },
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+              };
+                  
+              $("#slider1_container").css("display", "block");
+              var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+              function ScaleSlider() {
+                  var bodyWidth = document.body.clientWidth;
+                  if (bodyWidth)
+                      jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                  else
+                      window.setTimeout(ScaleSlider, 30);
+              }
+              ScaleSlider();
+
+              $(window).bind("load", ScaleSlider);
+              $(window).bind("resize", ScaleSlider);
+              $(window).bind("orientationchange", ScaleSlider);
+              
+          });
+      </script>
         <!-- endbuild -->
 </body>
 </html>

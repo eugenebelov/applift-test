@@ -36,15 +36,15 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
+        // tasks: ['jshint'],
         options: {
           livereload: true
         }
       },
-      jstest: {
-        files: ['test/spec/{,*/}*.js'],
-        tasks: ['test:watch']
-      },
+      // jstest: {
+      //   files: ['test/spec/{,*/}*.js'],
+      //   tasks: ['test:watch']
+      // },
       gruntfile: {
         files: ['Gruntfile.js']
       },
