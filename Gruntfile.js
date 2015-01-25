@@ -234,17 +234,17 @@ module.exports = function (grunt) {
       dist: {
         options: {
           collapseBooleanAttributes: true,
-          collapseWhitespace: true,
-          conservativeCollapse: true,
-          removeAttributeQuotes: true,
+          // collapseWhitespace: true,
+          // conservativeCollapse: true,
+          // removeAttributeQuotes: true,
           removeCommentsFromCDATA: true,
-          removeEmptyAttributes: true,
-          removeOptionalTags: true,
-          removeRedundantAttributes: true,
-          useShortDoctype: true
+          // removeEmptyAttributes: true,
+          // removeOptionalTags: true,
+          // removeRedundantAttributes: true,
+          // useShortDoctype: true
         },
         files: [{
-          expand: true,
+          // expand: true,
           cwd: '<%= config.dist %>',
           src: '{,*/}*.html',
           dest: '<%= config.dist %>'
@@ -255,25 +255,25 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css',
-    //         '<%= config.app %>/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/scripts/scripts.js': [
-    //         '<%= config.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
+    cssmin: {
+      dist: {
+        files: {
+          '<%= config.dist %>/styles/main.css': [
+            '.tmp/styles/{,*/}*.css',
+            '<%= config.app %>/styles/{,*/}*.css'
+          ]
+        }
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          '<%= config.dist %>/scripts/scripts.js': [
+            '<%= config.dist %>/scripts/scripts.js'
+          ]
+        }
+      }
+    },
     // concat: {
     //   dist: {}
     // },
@@ -373,11 +373,11 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
-    'concat',
-    // 'cssmin',
-    // 'uglify',
+    // 'concat',
+    'cssmin',
+    'uglify',
     'copy:dist',
-    // 'rev',
+    'rev',
     'usemin',
     'htmlmin'
   ]);
