@@ -35,7 +35,7 @@ html, body {
   margin: 0;
 }
 
-.main-menu ul li a {
+.main-menu ul.navbar-nav > li > a {
   display: block;
   color: #FFFFFF;
   text-decoration: none;
@@ -43,22 +43,32 @@ html, body {
   font-size: 24px;
 }
 
-.main-menu ul li a:hover {
-  font-weight: 600;
+.main-menu ul.navbar-nav li a:hover {
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .main-menu ul li {
   display: block;
   float:left;
   vertical-align: top;
-  width: 25%;
   text-align: center;
-  line-height: 65px;
 }
 
 .header {
   background-color: #333333;
-  /*height: 100%;*/
+}
+
+.header .logo-img {
+  padding-top: 20px;
+}
+
+.header .logo-text-xs {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 5px;
 }
 
 .slide1-content {
@@ -191,17 +201,58 @@ html, body {
 
 .language {
   position: absolute;
+  margin: 30px 20px 0 0;
   top: 0;
   right: 0;
-  /*right: 180px;*/
-  /*line-height: 65px;*/
   color: #FFFFFF;
 }
 
+.language div.dropdown button {
+  background-color: #2a2a2a;
+  border: 0;
+  color: #FFF;
+}
+
+.language div.dropdown button > img {
+  padding-right: 5px;
+  margin-top: -3px;
+}
+
+.language div.dropdown.open button {
+  background-color: #2a2a2a;
+  border: 0;
+  color: #FFF;
+}
+
+.language div.dropdown.open button > img {
+  padding-right: 5px;
+  margin-top: -3px;
+}
+
+.language ul.dropdown-menu {
+  min-width: 0;
+  background-color: #2a2a2a;
+  border: 0;
+  margin: 0;
+  padding: 0 2px 0 2px;
+}
+
+.language ul.dropdown-menu > li > a {
+  color: #FFF;
+  padding: 3px 15px 3px 15px;
+}
+
+.language ul.dropdown-menu > li > a:hover {
+  color: #FFF;
+  background-color: #4b4b4b;
+}
+
+.language ul.dropdown-menu > li > a > img {
+  padding-right: 5px;
+  margin-top: -3px;
+}
+
 .login {
-  position: absolute;
-  top: 0;
-  right: 180px;
   line-height: 65px;
   color: #FFFFFF;
 }
